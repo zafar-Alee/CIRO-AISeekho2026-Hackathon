@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AISeekho - Tactical Dashboard</string>
+    <string name="login_title">Tactical Dashboard Login</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="feed_title">Signal Feed</string>
+    <string name="analysis_title">Analysis &amp; Verification</string>
+    <string name="command_title">Command Center</string>
+    <string name="simulation_title">Tactical Simulation</string>
+</resources>
+
