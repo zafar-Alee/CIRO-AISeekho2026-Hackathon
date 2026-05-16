@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Python
 __pycache__/
 *.py[cod]
@@ -56,48 +55,6 @@ logs/agent_traces/
 # Firebase
 service-account-key.json
 firebase-debug.log
- 
-=======
-# Gradle files
-.gradle/
-build/
-*.apk
-*.aar
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-.idea/
-.classpath
-.c9/
-*.class
-*.dex
-*.jar
-*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.xlsx
-*.zip
-
-# Compiled class and archive files
-**/bin/
-**/gen-external-apklibs/
-**/proguard/
-**/target/
-
-# generated files
-bin/
-gen/
-out/
-
-# Intellij files
-*.iml
 .settings/
 .classpath
 
