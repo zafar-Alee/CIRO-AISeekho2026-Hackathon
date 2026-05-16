@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python
 __pycache__/
 *.py[cod]
@@ -56,3 +57,72 @@ logs/agent_traces/
 service-account-key.json
 firebase-debug.log
  
+=======
+# Gradle files
+.gradle/
+build/
+*.apk
+*.aar
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+.idea/
+.classpath
+.c9/
+*.class
+*.dex
+*.jar
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.xlsx
+*.zip
+
+# Compiled class and archive files
+**/bin/
+**/gen-external-apklibs/
+**/proguard/
+**/target/
+
+# generated files
+bin/
+gen/
+out/
+
+# Intellij files
+*.iml
+.settings/
+.classpath
+
+# Test coverage
+.coverage
+.cobertura/
+coverage.xml
+*.db
+
+# Mac files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# node files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+
+>>>>>>> 61c751167e3df905b64f0808f08adf78055a1217
