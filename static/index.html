@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIRO — Crisis Intelligence & Response Orchestrator</title>
+  <meta name="description" content="Agentic AI system for real-time urban crisis detection, analysis, and response orchestration in Pakistani cities.">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-icon">C</div>
+        <div>
+          <h1><span>CIRO</span></h1>
+          <div class="logo-sub">Crisis Intelligence & Response</div>
+        </div>
+      </div>
+      <div class="header-status">
+        <div class="dot"></div>
+        <span>Pipeline Online</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Scenario Picker -->
+    <section class="scenario-section">
+      <div class="section-title">Select Demo Scenario</div>
+      <div class="scenario-grid">
+        <div class="scenario-card" data-scenario="flood">
+          <div class="emoji">🌊</div>
+          <h3>Scenario A: Urban Flooding</h3>
+          <p>G-10 Islamabad flooding — heavy rain, waterlogged roads, stranded vehicles.</p>
+          <span class="badge badge-high">High Severity</span>
+        </div>
+        <div class="scenario-card" data-scenario="multi">
+          <div class="emoji">⚡</div>
+          <h3>Scenario B: Multi-Crisis</h3>
+          <p>Simultaneous G-10 flood + F-8 heatwave. Tests resource sharing.</p>
+          <span class="badge badge-multi">Resource Optimization</span>
+        </div>
+        <div class="scenario-card" data-scenario="false_alarm">
+          <div class="emoji">🔍</div>
+          <h3>Scenario C: False Positive</h3>
+          <p>Reports of flooding that turn out to be a broken water main.</p>
+          <span class="badge badge-false">Conflict Detection</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Input -->
+    <section class="input-section">
+      <div class="input-glass">
+        <div class="input-row">
+          <div class="input-group">
+            <label>Crisis Report (Roman Urdu / English)</label>
+            <textarea id="crisisText" rows="2" placeholder="Select a scenario above or type a crisis report..."></textarea>
+          </div>
+          <div class="input-group" style="max-width:260px">
+            <label>Location</label>
+            <input id="crisisLocation" type="text" placeholder="G-10, Islamabad">
+          </div>
+        </div>
+        <div style="display:flex;justify-content:flex-end">
+          <button id="btnRun" class="btn-run">Run CIRO Pipeline</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pipeline Progress -->
+    <section id="pipelineSection" class="pipeline-section">
+      <div class="section-title">Agent Pipeline</div>
+      <div class="pipeline-steps">
+        <div class="pipeline-step" data-step="1">
+          <div class="step-icon">📡</div>
+          <div class="step-label">Signal<br>Collector</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="pipeline-step" data-step="2">
+          <div class="step-icon">🔍</div>
+          <div class="step-label">Crisis<br>Detector</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="pipeline-step" data-step="3">
+          <div class="step-icon">📊</div>
+          <div class="step-label">Situation<br>Analyzer</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="pipeline-step" data-step="4">
+          <div class="step-icon">🎯</div>
+          <div class="step-label">Action<br>Planner</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="pipeline-step" data-step="5">
+          <div class="step-icon">🚀</div>
+          <div class="step-label">Executor</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="resultsSection" class="results-section">
+      <div id="resultsContent"></div>
+    </section>
+
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
